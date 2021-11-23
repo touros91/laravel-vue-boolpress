@@ -16,5 +16,15 @@ class PostController extends Controller
             'success' => true,
             'data' => $posts
         ]);
-    }    
+    }   
+    
+    public function show($slug)
+    {
+        $post = Post::where('slug', $slug)->first();
+
+        return response()->json([
+            'success' => true,
+            'data' => $post
+        ]);
+    }   
 }

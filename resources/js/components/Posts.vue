@@ -1,13 +1,11 @@
 <template>
     <div class="album-container">
-        <!-- <h3>All Posts</h3> -->
-        <div class="album" v-for="post in posts" :key="post.id">
-            {{post.title}}
-        </div>
+        <PostCard v-for="post in posts" :key="post.id" :data="post"/>
     </div>
 </template>
 
 <script>
+import PostCard from './PostCard';
 
 export default {
     name: 'Posts',
@@ -15,6 +13,9 @@ export default {
         return {
             posts: []
         }
+    },
+    components: {
+        PostCard
     },
     mounted() {
         axios.get("/api/posts")
@@ -35,15 +36,5 @@ export default {
     display: flex;
     flex-wrap: wrap;
     padding: 20px; 
-}
-
-.album {
-    width: calc(100% / 2 - 30px);
-    margin: 5px 15px;
-    background-color: #2E3A46;
-    text-align: center;
-    color: white;
-    padding: 30px; 
-    border: 2px solid white;
 }
 </style>
