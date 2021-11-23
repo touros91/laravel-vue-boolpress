@@ -1,5 +1,7 @@
 <template>
+
      <Posts/>
+
 </template>
 
 <script>

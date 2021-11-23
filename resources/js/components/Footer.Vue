@@ -9,3 +9,13 @@ export default {
     name: 'Footer'
 }
 </script>
+
+<style lang="scss">
+    
+    footer {
+        padding: 10px;
+        p {
+            color: white;
+        }
+    }
+</style>
