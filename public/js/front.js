@@ -2578,7 +2578,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".album {\n  width: calc(50% - 30px);\n  margin: 5px 15px;\n  background-color: #2E3A46;\n  text-align: center;\n  padding: 30px;\n  border: 2px solid white;\n}\np {\n  color: white;\n  padding: 50px;\n}\nh3 {\n  color: white;\n  padding: 10px;\n}", ""]);
+exports.push([module.i, ".album {\n  width: calc(50% - 30px);\n  margin: 5px 15px;\n  background-color: #2E3A46;\n  text-align: center;\n  padding: 30px;\n  border: 2px solid white;\n  border-radius: 20px;\n}\np {\n  color: white;\n  padding: 50px;\n}\nh3 {\n  color: white;\n  padding: 10px;\n}", ""]);
 
 // exports
 

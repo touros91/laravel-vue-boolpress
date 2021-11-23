@@ -24,6 +24,7 @@ export default {
         text-align: center; 
         padding: 30px; 
         border: 2px solid white;
+        border-radius: 20px;
     }
     p {
         color: white;
