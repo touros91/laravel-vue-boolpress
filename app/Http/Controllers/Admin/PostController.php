@@ -49,6 +49,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        //validations
         $request->validate($this->validationRules);
 
         $newPost = new Post();

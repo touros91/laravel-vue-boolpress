@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>Made with &hearts; by Boolean</p> 
+        <p>Made with <span style="color:red;">&hearts;</span>  by Boolean</p> 
     </footer>
 </template>
 
