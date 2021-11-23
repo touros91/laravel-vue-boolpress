@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 const router = new VueRouter({
     mode: 'history',
@@ -24,6 +25,11 @@ const router = new VueRouter({
             path: '/contatti',
             name: 'contact',
             component: Contact
+        },
+        {
+            path: '/*',
+            name: 'not-found',
+            component: NotFound
         }
     ]
 });
