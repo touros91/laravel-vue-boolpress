@@ -1,6 +1,7 @@
 <template>
     <div class="size">
         <h1>{{post.title}}</h1>
+        <h3>Cateogria: {{post.category.name}}</h3>
         <p>{{post.content}}</p>
     </div>
 </template>
@@ -29,6 +30,10 @@ export default {
 
 .size {
     min-height: 80vh;
+}
+
+h3 {
+    padding-left: 50px;
 }
    
 </style>
